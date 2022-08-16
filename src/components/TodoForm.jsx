@@ -3,7 +3,7 @@ import { nanoid } from 'nanoid';
 
 function TodoForm(props) {
 
-    const [input, setinput] = useState('');
+    const [input, setinput] = useState(props.edit ? props.edit.value : '');
 
     const inputRef = useRef(null)
 
